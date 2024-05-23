@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="14dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/txtStb"
+        android:layout_width="307dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="165dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="150dp"
+        android:ems="10"
+        android:hint="Masukkan Stambuk"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.568"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtNama"
+        android:layout_width="317dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="165dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="100dp"
+        android:ems="10"
+        android:hint="Masukkan Nama"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtStb" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="387dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="144dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Prodi"
+        android:layout_width="91dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="272dp"
+        android:layout_marginBottom="350dp"
+        android:hint="Program Studi"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="191dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="-5dp"
+        android:layout_marginBottom="290dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Prodi">
+
+        <RadioButton
+            android:id="@+id/TI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Teknik Informatika" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="159dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="-5dp"
+        android:layout_marginTop="-14dp"
+        android:layout_marginBottom="290dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/radioGroup"
+        app:layout_constraintTop_toTopOf="@+id/radioGroup">
+
+        <RadioButton
+            android:id="@+id/SI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sistem Informasi" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/mnat"
+        android:layout_width="105dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="269dp"
+        android:layout_marginBottom="257dp"
+        android:hint="Minat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Prodi" />
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="235dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="-40dp"
+        android:layout_marginBottom="229dp"
+        android:text="Badan Eksekutif Mahasiswa"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mnat" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="224dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="-30dp"
+        android:layout_marginBottom="204dp"
+        android:text="Penulisan Karya Ilmiah"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox1" />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-15dp"
+        android:layout_marginBottom="185dp"
+        android:text="Kewirausahaan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/checkBox1"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
+
+    <CheckBox
+        android:id="@+id/checkBox4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="-20dp"
+        android:layout_marginBottom="145dp"
+        android:text="Kesenian"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox3" />
+
+    <CheckBox
+        android:id="@+id/checkBox5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="-20dp"
+        android:layout_marginBottom="115dp"
+        android:text="Jurnalistik"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox4" />
+
+    <CheckBox
+        android:id="@+id/checkBox6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="-20dp"
+        android:layout_marginBottom="85dp"
+        android:text="Olahraga"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox5" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="228dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="158dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="16dp"
+        android:text="Tampilkan Ringkasan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
